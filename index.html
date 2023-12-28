@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+
+    <h1>Random Password Generator</h1>
+
+    <div>
+        <label for="password-length">Select the length of the password:</label>
+        <input id="password-length" type="number">
+    </div>
+
+    <div>
+        <label>What you want to include in your password?</label>
+        <div>
+            <input type="checkbox" value="letters" id="letters-box">
+            <label for="letters-box">Letters</label>
+
+            <input type="checkbox" value="numbers" id="numbers-box">
+            <label for="numbers-box">Numbers</label>
+
+            <input type="checkbox" value="symbols" id="symbols-box">
+            <label for="symbols-box">Symbols</label>
+        </div>
+    </div>
+
+    <button>Generate</button>
+
+    <div>
+        <div id="password-one"></div>
+        <div id="password-two"></div>
+        <div id="password-three"></div>
+        <div id="password-four"></div>
+    </div>
+
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
