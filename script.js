@@ -18,6 +18,14 @@ numbersList.addEventListener("click", addNumbers);
 symbolsList.addEventListener("click", addSymbols);
 
 
+let characters = "";
+
+let simpleLettersList = "abcdefghijklmnopqrstuvwxyz";
+let capitalLettersList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let numbersListItems = "1234567890";
+let symbolsListItems = "@#$%&(){}[]?.,~*/-+=/";
+
+
 function addSimpleLetters() {
     if (simpleLetters.checked === true) {
         console.log("Simple Letters Checked")
