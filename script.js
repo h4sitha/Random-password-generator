@@ -19,17 +19,33 @@ symbolsList.addEventListener("click", addSymbols);
 
 
 function addSimpleLetters() {
-    console.log("Simple Letters Checkbox")
+    if (simpleLetters.checked === true) {
+        console.log("Simple Letters Checked")
+    } else {
+        console.log("Simple Letters Unchecked")
+    }
 }
 
 function addCapitalLetters() {
-    console.log("Capital Letters Checkbox")
+    if (capitalLetters.checked === true) {
+        console.log("Capital Letters Checked")
+    } else {
+        console.log("Capital Letters Unchecked")
+    }
 }
 
 function addNumbers() {
-    console.log("Numbers Checkbox")
+    if (numbersList.checked === true) {
+        console.log("Numbers Checked")
+    } else {
+        console.log("Numbers Unchecked")
+    }
 }
 
 function addSymbols() {
-    console.log("Symbols Checkbox")
+    if (symbolsList.checked === true) {
+        console.log("Symbols Checked")
+    } else {
+        console.log("Symbols Unchecked")
+    }
 }
