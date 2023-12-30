@@ -1,12 +1,3 @@
-let generateButton = document.querySelector("button");
-
-generateButton.addEventListener("click", generatePasswords);
-
-function generatePasswords() {
-    console.log("Button Clicked!");
-}
-
-
 let simpleLetters = document.getElementById("s-letters-box");
 let capitalLetters = document.getElementById("c-letters-box");
 let numbersList = document.getElementById("numbers-box");
@@ -64,4 +55,16 @@ function addSymbols() {
         characters = characters.replace(symbolsListItems, "");
         console.log(characters);
     }
+}
+
+
+let passwordLength = document.getElementById("password-length");
+
+
+let generateButton = document.querySelector("button");
+
+generateButton.addEventListener("click", generatePasswords);
+
+function generatePasswords() {
+    console.log("Button Clicked!");
 }
