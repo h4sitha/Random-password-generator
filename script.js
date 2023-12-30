@@ -28,32 +28,40 @@ let symbolsListItems = "@#$%&(){}[]?.,~*/-+=/";
 
 function addSimpleLetters() {
     if (simpleLetters.checked === true) {
-        console.log("Simple Letters Checked")
+        characters += simpleLettersList;
+        console.log(characters);
     } else {
-        console.log("Simple Letters Unchecked")
+        characters = characters.replace(simpleLettersList, "");
+        console.log(characters);
     }
 }
 
 function addCapitalLetters() {
     if (capitalLetters.checked === true) {
-        console.log("Capital Letters Checked")
+        characters += capitalLettersList;
+        console.log(characters);
     } else {
-        console.log("Capital Letters Unchecked")
+        characters = characters.replace(capitalLettersList, "");
+        console.log(characters);
     }
 }
 
 function addNumbers() {
     if (numbersList.checked === true) {
-        console.log("Numbers Checked")
+        characters += numbersListItems;
+        console.log(characters);
     } else {
-        console.log("Numbers Unchecked")
+        characters = characters.replace(numbersListItems, "");
+        console.log(characters);
     }
 }
 
 function addSymbols() {
     if (symbolsList.checked === true) {
-        console.log("Symbols Checked")
+        characters += symbolsListItems;
+        console.log(characters);
     } else {
-        console.log("Symbols Unchecked")
+        characters = characters.replace(symbolsListItems, "");
+        console.log(characters);
     }
 }
