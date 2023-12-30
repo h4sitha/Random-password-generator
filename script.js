@@ -66,10 +66,13 @@ let generateButton = document.querySelector("button");
 generateButton.addEventListener("click", generatePasswords);
 
 function generatePasswords() {
+
+    let password = "";
     
     for (let i=0; i < passwordLength.value; i++) {
-        console.log(i);
+        password += characters.charAt(Math.floor(Math.random() * passwordLength.value));
     }
 
-}
+    console.log(password);
 
+}
