@@ -69,12 +69,18 @@ generateButton.addEventListener("click", generatePasswords);
 
 function generatePasswords() {
 
-    let password = "";
-    
-    for (let i=0; i < passwordLength.value; i++) {
-        password += characters.charAt(Math.floor(Math.random() * characters.length));
+    for (let i=0; i < 4; i++) {
+
+        let password = "";
+        
+        for (let i=0; i < passwordLength.value; i++) {
+            password += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+
+        generatedPasswords.push(password);
+
     }
 
-    generatedPasswords.push(password);
+    console.log(generatedPasswords)
 
 }
