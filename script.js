@@ -60,7 +60,7 @@ function addSymbols() {
 
 let passwordLength = document.getElementById("password-length");
 
-let generatedPassword = [];
+let generatedPasswords = [];
 
 
 let generateButton = document.querySelector("button");
@@ -75,6 +75,6 @@ function generatePasswords() {
         password += characters.charAt(Math.floor(Math.random() * characters.length));
     }
 
-    generatedPassword.push(password);
+    generatedPasswords.push(password);
 
 }
