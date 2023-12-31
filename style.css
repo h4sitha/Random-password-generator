@@ -54,6 +54,9 @@ button:hover {
     margin: 0;
     background-color: rgba(240, 240, 240, 0.2);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #password-div-list {
