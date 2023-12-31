@@ -89,6 +89,11 @@ function generatePasswords() {
 
     }
 
-    console.log(generatedPasswords)
+    console.log(generatedPasswords);
+
+    passwordOne.textContent = generatedPasswords[0];
+    passwordTwo.textContent = generatedPasswords[1];
+    passwordThree.textContent = generatedPasswords[2];
+    passwordFour.textContent = generatedPasswords[3];
 
 }
