@@ -69,6 +69,8 @@ generateButton.addEventListener("click", generatePasswords);
 
 function generatePasswords() {
 
+    generatedPasswords = [];
+
     for (let i=0; i < 4; i++) {
 
         let password = "";
