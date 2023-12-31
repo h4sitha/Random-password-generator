@@ -58,6 +58,12 @@ function addSymbols() {
 }
 
 
+let passwordOne = document.getElementById("password-one");
+let passwordTwo = document.getElementById("password-two");
+let passwordThree = document.getElementById("password-three");
+let passwordFour = document.getElementById("password-four");
+
+
 let passwordLength = document.getElementById("password-length");
 
 let generatedPasswords = [];
