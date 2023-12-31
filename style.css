@@ -52,11 +52,12 @@ button:hover {
     height: 40px;
     width: 100%;
     margin: 0;
-    background-color: rgba(240, 240, 240, 0.2);
+    background-color: rgba(240, 240, 240, 0.12);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #F29559;
 }
 
 #password-div-list {
