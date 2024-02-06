@@ -100,3 +100,11 @@ button:hover {
     }
 
 }
+
+@media (max-width: 426px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+}
