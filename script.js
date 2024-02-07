@@ -16,6 +16,10 @@ let capitalLettersList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let numbersListItems = "1234567890";
 let symbolsListItems = "@#$%&(){}[]?.,~*/-+=/";
 
+document.addEventListener("DOMContentLoaded", function() {
+  var checkbox = document.getElementById("s-letters-box");
+  checkbox.checked = true;
+});
 
 function addSimpleLetters() {
     if (simpleLetters.checked === true) {
@@ -57,14 +61,12 @@ function addSymbols() {
     }
 }
 
-
-let passwordOne = document.getElementById("password-one");
-let passwordTwo = document.getElementById("password-two");
-let passwordThree = document.getElementById("password-three");
-let passwordFour = document.getElementById("password-four");
+let passwords = [document.getElementById("password-one"), document.getElementById("password-two"), document.getElementById("password-three"), document.getElementById("password-four")]
 
 
 let passwordLength = document.getElementById("password-length");
+
+let passwordAmount = document.getElementById("password-amount");
 
 let generatedPasswords = [];
 
@@ -77,10 +79,10 @@ function generatePasswords() {
 
     generatedPasswords = [];
 
-    for (let i=0; i < 4; i++) {
+    for (let i=0; i < passwordAmount.value; i++) {
 
         let password = "";
-        
+
         for (let i=0; i < passwordLength.value; i++) {
             password += characters.charAt(Math.floor(Math.random() * characters.length));
         }
@@ -91,9 +93,34 @@ function generatePasswords() {
 
     console.log(generatedPasswords);
 
-    passwordOne.textContent = generatedPasswords[0];
-    passwordTwo.textContent = generatedPasswords[1];
-    passwordThree.textContent = generatedPasswords[2];
-    passwordFour.textContent = generatedPasswords[3];
 
+    passwords[0].textContent = generatedPasswords[0];
+
+    if (passwordAmount.value > 3) {
+      passwords[3].textContent = generatedPasswords[3];
+      passwords[3].style.display = "inline";
+      passwords[3].style.textAlign = "center";
+      passwords[3].style.alignItems = "center";
+      passwords[3].style.justifyContent = "center";
+    } else {
+      passwords[3].style.display = "none";
+    }
+    if (passwordAmount.value > 2) {
+      passwords[2].textContent = generatedPasswords[2];
+      passwords[2].style.display = "inline";
+      passwords[2].style.textAlign = "center";
+      passwords[2].style.alignItems = "center";
+      passwords[2].style.justifyContent = "center";
+    } else {
+      passwords[2].style.display = "none";
+    }
+    if (passwordAmount.value > 1) {
+      passwords[1].textContent = generatedPasswords[1];
+      passwords[1].style.display = "inline";
+      passwords[1].style.textAlign = "center";
+      passwords[1].style.alignItems = "center";
+      passwords[1].style.justifyContent = "center";
+    } else {
+      passwords[1].style.display = "none";
+    }
 }
